@@ -14,7 +14,7 @@ function MsgController($scope) {
   $scope.calc = function () {
     var total = stringSplit();
     $scope.value = total;
-    console.log(total);
+
     if (total==0)
     {
         $scope.myMessage ="Please enter data first";
@@ -33,7 +33,7 @@ function MsgController($scope) {
 
   function stringSplit() {
     var x =0;
-    console.log($scope.dishes);
+    
     if ($scope.dishes != "")
      {
         var arrayOfStrings = $scope.dishes.split(',');
